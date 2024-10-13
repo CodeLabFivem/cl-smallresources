@@ -1,4 +1,4 @@
-##cl-smallresources - Highly Optimized FiveM Script for QBCore Framework
+# cl-smallresources - Highly Optimized FiveM Script for QBCore Framework
 
 A highly optimized FiveM script, built for the QBCore framework, offering a variety of features like Discord Rich Presence, configurable world density settings, vehicle name display, forced first-person view options, and an advanced webhook logging system. This script ensures minimal resource usage while delivering rich functionality and customization options for server administrators.
 
