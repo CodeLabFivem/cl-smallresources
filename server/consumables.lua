@@ -36,9 +36,14 @@ end)
 for itemName, _ in pairs(Config.Consumables.Consumables) do
     QBCore.Functions.CreateUseableItem(itemName, function(source)
         TriggerClientEvent('consumables:client:UseItem', source, itemName)
-        print("usear: "..itemName)
+        print("Using item: " .. itemName)        
+        local player = QBCore.Functions.GetPlayer(source)  -- Get the player instance
+        if player then
+            player.Functions.RemoveItem(itemName, 1)  -- Remove 1 item from the inventory
+        end
     end)
 end
+
 else
     local utils = require("client/utils")
     utils.printColoredMessage("^1Not Using Consumables System From cl-smallresources", "^1")
