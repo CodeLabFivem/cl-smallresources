@@ -1,63 +1,60 @@
-cl-smallresources - Highly Optimized (0.04-0.05 ms)
 
-A highly optimized FiveM script, built for the QBCore framework, featuring Discord Rich Presence, configurable world density settings, vehicle names display, forced first-person views for aiming, and an advanced webhook logging system. This script ensures low resource usage while providing rich functionality and customization.
+cl-smallresources - Highly Optimized FiveM Script for QBCore Framework
 
-==========================
+A highly optimized FiveM script, built for the QBCore framework, offering a variety of features like Discord Rich Presence, configurable world density settings, vehicle name display, forced first-person view options, and an advanced webhook logging system. This script ensures minimal resource usage while delivering rich functionality and customization options for server administrators.
+
+---
+
 Table of Contents
-==========================
-
 1. Features
 2. Requirements
 3. Installation
 4. Configuration
-   4.1. Discord Rich Presence
-   4.2. World Density Settings
-   4.3. Forced First-Person Options
-   4.4. Car Names Display
-   4.5. Disable HUD/Controls
-   4.6. Logging and Webhooks
-   4.7. Anti-AFK System
+   - Discord Rich Presence
+   - World Density Settings
+   - Forced First-Person Options
+   - Car Names Display
+   - Disable HUD/Controls
+   - Logging and Webhooks
+   - Anti-AFK System
 5. Optimization
 6. Contributing
 7. License
 
-==========================
+---
+
 1. Features
-==========================
 
-- **Highly Optimized**: Script runs at an impressive 0.04-0.05 ms, ensuring minimal performance impact on your server.
-- **Discord Rich Presence**: Fully configurable Rich Presence integration to showcase server information and custom buttons in the player’s Discord profile.
-- **World Density Control**: Adjust traffic, pedestrian, and scenario densities dynamically, with optional peak hour settings.
-- **Forced First-Person View**: Force first-person view when shooting or aiming, both on foot, in vehicles, or while riding bikes.
-- **Vehicle Name Display**: Display the name of the vehicle on the HUD.
-- **Logging and Webhooks**: A detailed logging system with customizable webhooks for various in-game activities (money changes, robberies, stash, trunk, glovebox events, and more).
-- **Anti-AFK System**: Automatically kicks AFK players after a configurable amount of time with warning messages.
+- Highly Optimized: Runs at an impressive 0.04-0.05 ms, minimizing impact on server performance.
+- Discord Rich Presence: Configurable Rich Presence for showcasing server information and custom buttons in players' Discord profiles.
+- World Density Control: Adjust traffic, pedestrians, and scenario densities dynamically, including peak hour settings.
+- Forced First-Person View: Enforce first-person view when aiming or shooting on foot, in vehicles, or on bikes.
+- Vehicle Name Display: Display vehicle names on the HUD.
+- Logging and Webhooks: Customizable webhook logging for various in-game events like money changes, robberies, and more.
+- Anti-AFK System: Automatically kick AFK players after a set time with customizable warning messages.
 
-==========================
+---
+
 2. Requirements
-==========================
 
 - QBCore Framework (latest version)
 - Discord Developer Application (for Discord Rich Presence)
-- A FiveM server with at least build 2060 or higher.
+- A FiveM server with build 2060 or higher.
 
-==========================
+---
+
 3. Installation
-==========================
 
 1. Download or clone this repository to your FiveM resources folder.
-2. Add `start cl-smallresources` to your `server.cfg`.
-3. Customize the `config.lua` file to your preferences.
+2. Add start cl-smallresources to your server.cfg.
+3. Customize the config.lua file to fit your preferences.
 
-==========================
+---
+
 4. Configuration
-==========================
 
-### 4.1. Discord Rich Presence
-
-In the `config.lua`, you can enable/disable Discord Rich Presence, set your application ID, and customize the icons and buttons shown in the player's Discord profile.
-
-Example configuration:
+4.1 Discord Rich Presence
+Enable or disable Discord Rich Presence, set your Discord application ID, and customize the icons and buttons shown in players' profiles.
 
 ```
 Config.Discord = {
@@ -72,9 +69,8 @@ Config.Discord = {
 }
 ```
 
-### 4.2. World Density Settings
-
-Control the density of traffic, pedestrians, and ambient scenarios dynamically, with settings for peak hours:
+4.2 World Density Settings
+Control traffic, pedestrians, and scenario density dynamically, with optional peak hour settings.
 
 ```
 Config.Density = {
@@ -88,11 +84,8 @@ Config.Density = {
 }
 ```
 
-### 4.3. Forced First-Person Options
-
-You can force players into first-person view while aiming or shooting on foot, in vehicles, or on bikes.
-
-Example:
+4.3 Forced First-Person Options
+Force players into first-person view while aiming or shooting, whether on foot, in vehicles, or on bikes.
 
 ```
 Config.Options = {
@@ -102,19 +95,15 @@ Config.Options = {
 }
 ```
 
-### 4.4. Car Names Display
-
-Enable or disable the display of vehicle names on the HUD:
+4.4 Car Names Display
+Enable or disable vehicle name display on the HUD.
 
 ```
 Config.Usevehicletext = true
 ```
 
-### 4.5. Disable HUD/Controls
-
-You can disable default HUD components and certain player controls as needed.
-
-Example:
+4.5 Disable HUD/Controls
+Disable certain HUD components and player controls as needed.
 
 ```
 Config.Disable = {
@@ -123,9 +112,8 @@ Config.Disable = {
 }
 ```
 
-### 4.6. Logging and Webhooks
-
-Customizable webhooks for various in-game events:
+4.6 Logging and Webhooks
+Customizable webhooks for various in-game events.
 
 ```
 Config.Webhooks = {
@@ -134,9 +122,8 @@ Config.Webhooks = {
 }
 ```
 
-### 4.7. Anti-AFK System
-
-An anti-AFK system to automatically kick players after a defined time period:
+4.7 Anti-AFK System
+Automatically kick AFK players after a set time, with warning messages.
 
 ```
 Config.Afk = {
@@ -146,20 +133,20 @@ Config.Afk = {
 }
 ```
 
-==========================
+---
+
 5. Optimization
-==========================
 
-This script is highly optimized, running at only **0.04-0.05 ms**. It ensures minimal server resource usage, even with all features enabled, keeping your server fast and responsive.
+This script is highly optimized, running at only 0.04-0.05 ms to ensure minimal resource usage, even with all features enabled, maintaining a fast and responsive server.
 
-==========================
+---
+
 6. Contributing
-==========================
 
-Feel free to fork this project, submit issues, or create pull requests for improvements or bug fixes.
+Contributions are welcome! Feel free to fork this project, submit issues, or create pull requests for improvements or bug fixes.
 
-==========================
+---
+
 7. License
-==========================
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
