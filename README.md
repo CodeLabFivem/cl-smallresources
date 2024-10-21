@@ -101,17 +101,9 @@ Enable or disable vehicle name display on the HUD.
 Config.Usevehicletext = true
 ```
 
-4.5 Disable HUD/Controls
-Disable certain HUD components and player controls as needed.
-
-```
-Config.Disable = {
-    hudComponents = true,
-    controls = true
-}
 ```
 
-4.6 Logging and Webhooks
+4.7 Logging and Webhooks
 Customizable webhooks for various in-game events.
 
 ```
@@ -121,7 +113,7 @@ Config.Webhooks = {
 }
 ```
 
-4.7 Anti-AFK System
+4.8 Anti-AFK System
 Automatically kick AFK players after a set time, with warning messages.
 
 ```
