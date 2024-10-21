@@ -63,15 +63,6 @@ Config.Density = {
     pscenario = 1.0        -- Scenario density during peak hours. 0.0 means no ambient scenarios.
 }
 
----- HUD and Controls Disable ----
--- Disable specific components of the game's HUD or player controls.
-
-Config.Disable = {
-    hudComponents = true,   -- Disables default HUD components.
-    controls = true,        -- Disables default player controls.
-    displayammo = true      -- Disables the ammo display on the HUD.
-}
-
 ---- Logging Configuration ----
 -- Choose between 'discord' or 'fivemanage' for logging activities.
 
